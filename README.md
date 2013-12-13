@@ -18,3 +18,5 @@ public class EchoServer extends CommandHandler {
 
 where the 10000 is the port to listen on for commands. If the command "shutdown" is sent, the server will shutdown
 after all client threads are finished.
+
+This repository can be imported directly in eclipse.
