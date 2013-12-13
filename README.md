@@ -11,12 +11,13 @@ public class EchoServer extends CommandHandler {
   }
   
   public static void main(String[] args) {
-    new QuickServer(this, 10000);
+    new QuickServer(EchoServer.class, 10000);
   }
 }
 ```
 
 where the 10000 is the port to listen on for commands. If the command "shutdown" is sent, the server will shutdown
-after all client threads are finished.
+after all client threads are finished. All other commands are passed to the handle method in the implementation class
+you provide to the QuickServer.
 
 This repository can be imported directly in eclipse.
